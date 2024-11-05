@@ -1,0 +1,34 @@
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+[terminal.shell]
+program = "/bin/zsh"
+args = ["-c", "tmux new-session -A -D -s main"]
+[window]
+startup_mode = "Fullscreen"
+decorations = "Full"
+[keyboard]
+bindings = [
+	{ key = "`", mods = "Control", chars = "\u00020"},
+	{ key = "1", mods = "Control", chars = "\u00021"},
+	{ key = "2", mods = "Control", chars = "\u00022"},
+	{ key = "3", mods = "Control", chars = "\u00023"},
+	{ key = "4", mods = "Control", chars = "\u00024"},
+	{ key = "5", mods = "Control", chars = "\u00025"},
+	{ key = "6", mods = "Control", chars = "\u00026"},
+	{ key = "7", mods = "Control", chars = "\u00027"},
+	{ key = "8", mods = "Control", chars = "\u00028"},
+	{ key = "9", mods = "Control", chars = "\u00029"},
+	{ key = "t", mods = "Control", chars = "\u0002c"},
+	{ key = "Tab", mods = "Control", chars = "\u0002n"},
+	{ key = "Tab", mods = "Control|Shift", chars = "\u0002p"},
+	{ key = "W", mods = "Control", chars = "\u0002&"},
+	{ key = "ArrowUp", mods = "Control", command = {program = "tmux", args = ["select-pane", "-U"]}},
+	{ key = "ArrowDown", mods = "Control", command = {program = "tmux", args = ["select-pane", "-D"]}},
+	{ key = "ArrowLeft", mods = "Control", command = {program = "tmux", args = ["select-pane", "-L"]}},
+	{ key = "ArrowRight", mods = "Control", command = {program = "tmux", args = ["select-pane", "-R"]}},
+	#{ key = "ArrowUp", mods = "Control|", chars = "\u0002\""},
+	{ key = "ArrowDown", mods = "Control|Shift", chars = "\u0002\""},
+	#{ key = "ArrowLeft", mods = "Control|", chars = "\u0002&"},
+	{ key = "ArrowRight", mods = "Control|Shift", chars = "\u0002%"}
+]
+
